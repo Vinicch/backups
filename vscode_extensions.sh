@@ -1,0 +1,13 @@
+code --install-extension vadimcn.vscode-lldb
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension mikestead.dotenv
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension tamasfe.even-better-toml
+code --install-extension eamodio.gitlens
+code --install-extension golang.go
+code --install-extension pkief.material-icon-theme
+code --install-extension zhuangtongfa.material-theme
+code --install-extension esbenp.prettier-vscode
+code --install-extension matklad.rust-analyzer
+code --install-extension rangav.vscode-thunder-client
+code --install-extension gruntfuggly.todo-tree
