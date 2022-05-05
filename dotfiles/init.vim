@@ -10,8 +10,7 @@ Plug 'ervandew/supertab'
 " Integration
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
 
 " Language
 Plug 'w0rp/ale'
@@ -23,3 +22,9 @@ call plug#end()
 
 syntax on
 colorscheme onedark
+
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
