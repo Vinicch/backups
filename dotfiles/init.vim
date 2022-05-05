@@ -5,7 +5,6 @@ Plug 'joshdick/onedark.vim'
 
 " Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'ervandew/supertab'
 
 " Integration
 Plug 'vim-airline/vim-airline'
