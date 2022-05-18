@@ -13,6 +13,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Language
 Plug 'w0rp/ale'
