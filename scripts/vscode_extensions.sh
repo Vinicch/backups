@@ -7,7 +7,6 @@ code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension PKief.material-icon-theme
 code --install-extension rangav.vscode-thunder-client
-code --install-extension redhat.vscode-yaml
 code --install-extension rust-lang.rust-analyzer
 code --install-extension tamasfe.even-better-toml
 code --install-extension vadimcn.vscode-lldb
