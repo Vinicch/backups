@@ -1,7 +1,9 @@
+set number
+
 call plug#begin('~/.local/share/nvim/site/plugged')
 
 " Color theme
-Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 " Command
 Plug 'tpope/vim-fugitive'
@@ -13,7 +15,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
 
 " Language
 Plug 'w0rp/ale'
@@ -24,7 +25,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 syntax on
-colorscheme onedark
+colorscheme gruvbox
 
 " Shortcuts
 if has('nvim')
