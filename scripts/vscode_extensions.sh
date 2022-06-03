@@ -10,4 +10,5 @@ code --install-extension rangav.vscode-thunder-client
 code --install-extension rust-lang.rust-analyzer
 code --install-extension tamasfe.even-better-toml
 code --install-extension vadimcn.vscode-lldb
+code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.material-theme
