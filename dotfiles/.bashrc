@@ -52,12 +52,14 @@ alias update='sudo pacman -Syyu'
 
 # Get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 30 --number 10 -p http -p https --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 30 --number 10 -p http -p https --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 30 --number 10 -p http -p https --sort age --save /etc/pacman.d/mirrorlist"
+# Get fastest mirrors in your neighborhood (Manjaro)
+#alias mirror="sudo pacman-mirrors --geoip"
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+# Paru
+alias paru='paru --bottomup'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -85,5 +87,3 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-PS1='[\u@\h \W]\$ '
