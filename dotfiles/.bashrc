@@ -58,9 +58,6 @@ alias mirror="sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
-# Paru
-alias paru='paru --bottomup'
-
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()
