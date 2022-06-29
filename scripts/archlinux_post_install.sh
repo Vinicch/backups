@@ -12,7 +12,7 @@ sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose --save /etc/pa
 
 echo -e "${YELLOW}Installing base dev tools...${NC}"
 
-sudo pacman -S base-devel bash-completion bashtop docker docker-compose vim git wget tar unrar zip unzip
+sudo pacman -S base-devel bash-completion bashtop docker docker-compose vim git wget ttf-fira-code tar unrar zip unzip
 
 echo -e "${YELLOW}Installing Pacman helper...${NC}"
 
