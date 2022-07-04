@@ -4,7 +4,7 @@ NC='\033[0m'
 echo -e "${YELLOW}Updating mirrors...${NC}"
 
 # If using Manjaro
-#sudo pacman-mirrors --geoip
+#sudo pacman-mirrors -c all
 
 # If using other Arch distros
 sudo pacman -S reflector
