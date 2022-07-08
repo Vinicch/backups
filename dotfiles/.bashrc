@@ -58,6 +58,9 @@ alias mirror="sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
+# Neovim
+alias vim='nvim'
+
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()
