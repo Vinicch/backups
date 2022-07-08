@@ -15,7 +15,7 @@ echo -e "${YELLOW}Updating system...${NC}"
 sudo pacman -Syyu
 
 echo -e "${YELLOW}Installing packages...${NC}"
-sudo pacman -S base-devel bash-completion bashtop discord docker docker-compose firefox neofetch neovim noto-fonts noto-fonts-emoji tar ttf-fira-code unrar unzip zip wget
+sudo pacman -S base-devel bash-completion bashtop bat discord docker docker-compose dust fd firefox neofetch neovim noto-fonts noto-fonts-emoji ripgrep starship tar tokei ttf-fira-code unrar unzip zip wget
 
 echo -e "${YELLOW}Installing AUR helper...${NC}"
 sudo pacman -S git
