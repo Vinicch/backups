@@ -52,8 +52,6 @@ alias update='sudo pacman -Syyu'
 
 # Get fastest mirrors in your neighborhood
 alias mirror="sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose --save /etc/pacman.d/mirrorlist"
-# Get fastest mirrors in your neighborhood (Manjaro)
-#alias mirror="sudo pacman-mirrors --geoip"
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
