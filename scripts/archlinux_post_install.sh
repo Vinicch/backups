@@ -26,4 +26,9 @@ cd $HOME && rm -rf paru-bin/
 echo -e "${YELLOW}Installing AUR packages...${NC}"
 paru -S brave-bin visual-studio-code-bin
 
+echo -e "${YELLOW}Configuring Docker...${NC}"
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER
+
 echo -e "${GREEN}All done!${NC}"
