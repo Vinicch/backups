@@ -51,7 +51,7 @@ alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
 
 # Get fastest mirrors in your neighborhood
-alias mirror="sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector -f 30 -l 30 --number 10 -p https --verbose --save /etc/pacman.d/mirrorlist"
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
