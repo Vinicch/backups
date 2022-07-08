@@ -1,3 +1,3 @@
-# backups
+# Backups
 
-Backup files and guides
+Scripts, dotfiles, documentations
