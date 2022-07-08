@@ -1,27 +1,29 @@
-YELLOW='\033[1;33m'
 NC='\033[0m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
 
-echo "Are you using Manjaro? [y/n]"
-read -r IS_MANJARO
+echo "Are you using vanilla Arch? [y/n]"
+read -r IS_VANILLA
 
-echo -e "${YELLOW}Updating mirrors...${NC}"
-if [ $IS_MANJARO = y ]; then
-    sudo pacman-mirrors -c all
-else
+if [ $IS_VANILLA = y ]; then
+    echo -e "${YELLOW}Updating mirrors...${NC}"
     sudo pacman -S reflector
-    sudo reflector -f 30 -l 30 --number 10 -p http -p https --verbose --save /etc/pacman.d/mirrorlist
+    sudo reflector -f 30 -l 30 --number 10 -p https --verbose --save /etc/pacman.d/mirrorlist
 fi
 
-echo -e "${YELLOW}Installing base dev tools...${NC}"
+echo -e "${YELLOW}Updating system...${NC}"
+sudo pacman -Syyu
 
-sudo pacman -S base-devel bash-completion bashtop docker docker-compose vim git wget ttf-fira-code tar unrar zip unzip
+echo -e "${YELLOW}Installing packages...${NC}"
+sudo pacman -S base-devel bash-completion bashtop discord docker docker-compose firefox neofetch neovim noto-fonts noto-fonts-emoji tar ttf-fira-code unrar unzip zip wget
 
-echo -e "${YELLOW}Installing Pacman helper...${NC}"
-
+echo -e "${YELLOW}Installing AUR helper...${NC}"
+sudo pacman -S git
 cd $HOME && git clone https://aur.archlinux.org/paru-bin.git
 cd $HOME/paru-bin && makepkg -si
-cd $HOME && rm -rf paru-bin
+cd $HOME && rm -rf paru-bin/
 
-echo -e "${YELLOW}Updating system...${NC}"
+echo -e "${YELLOW}Installing AUR packages...${NC}"
+paru -S brave-bin visual-studio-code-bin
 
-paru
+echo -e "${GREEN}All done!${NC}"
